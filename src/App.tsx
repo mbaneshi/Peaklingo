@@ -2,18 +2,18 @@ import { memo } from "react";
 import styled from "styled-components";
 import GlobalStyles from "./globalStyles";
 
-const Title = styled.h1`
-  color: #666;
-`;
+import Parent from "./components/Parent";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Title>Welcome</Title>
-      <p>Use this as a starting point to develop your own application :-)</p>
+      <Parent />
     </>
   );
 }
 
 export default memo(App);
+///TODO
+//!add Hamburger menu
+//? add theme
