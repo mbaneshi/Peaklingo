@@ -15,7 +15,7 @@ const webpackConfig = {
     hot: true,
   },
   output: {
-    path: resolve(__dirname, "./dist"),
+    path: resolve(__dirname, "./public"),
     filename: "main.js",
   },
   module: {
