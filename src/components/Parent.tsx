@@ -3,7 +3,7 @@ import Header from "./Header";
 import Body from "./Body";
 import { useState, useEffect } from "react";
 let countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
-
+import { useTheme } from "styled-components";
 const ParentWrapper = styled.div`
   color: #666;
 `;
@@ -12,11 +12,10 @@ const showMe = (val: string) => {
 };
 
 function Parent() {
-  const [countDownString, setCountDownString] = useState("");
+  const theme = useTheme();
 
-  // useEffect(() => {
-  //   countDown();
-  // }, [countDownString]);
+  console.log("Current theme: ", theme);
+  const [countDownString, setCountDownString] = useState("");
 
   const countDown = () => {
     // Update the count down every 1 second
